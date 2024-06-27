@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import { getUsers, getUsersByID, createUser } from '../handlers/users'
+import { getUsers, getUserByID, createUser } from '../handlers/users'
 
 const router = Router()
 
@@ -7,7 +7,7 @@ const router = Router()
 router.get('/', getUsers)
 
 // /api/users/123
-router.get('/:id', getUsersByID)
+router.get('/:id', getUserByID)
 
 // /api/users
 router.post('/', createUser)
