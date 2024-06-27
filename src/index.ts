@@ -1,8 +1,6 @@
-import express, {Request, Response, NextFunction} from 'express'
-import usersRouter from './routes/users'
-const app = express()
+import {createApp} from './createApp'
 
-app.use('/api/users', usersRouter)
+const app = createApp()
 const PORT = 3000
 
 
